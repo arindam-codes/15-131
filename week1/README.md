@@ -8,3 +8,10 @@ after using less b -> beginning | g -> end | /word
 
 
 -a -> hidden files
+
+--------------------
+i needed to find a python book but i forgot the name it was something with python and obviously it shouldbe a pdf file
+
+so i applied this command find ~ -type f -iname "*python*.pdf"
+which means find in the home dir type is filetype iname means it should be case insensitive the name shuold include *python*.pdf and ends with pdf extension
+--------------------
