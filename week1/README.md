@@ -1,10 +1,10 @@
 i learnt week 1 "Using files and Command"
 
-scp pwd cd rm ls less cat tree -L x (command options args) cp mv rm -r(recursively) rmdir(empty dir) mkdir touch
+`scp` `pwd` `cd` `rm` `ls` `less` `cat` `tree -L x` `(command options args)` `cp` `mv` `rm -r(recursively)` `rmdir(empty dir)` `mkdir` `touch`
 
-after using less b -> beginning | g -> end | /word 
+after using `less` - `b -> beginning` | `g -> end` | `/word` 
 
-~ / . .. important dir's
+`~`, `/`, `.`, `..` -  important dir's
 
 
 -a -> hidden files
@@ -12,7 +12,10 @@ after using less b -> beginning | g -> end | /word
 --------------------
 i needed to find a python book but i forgot the name it was something with python and obviously it shouldbe a pdf file
 
-so i applied this command find ~ -type f -iname "*python*.pdf"
+so i applied this command 
+```
+find ~ -type f -iname "*python*.pdf"
+```
 which means find in the home dir type is filetype iname means it should be case insensitive the name shuold include *python*.pdf and ends with pdf extension
 --------------------
 
@@ -29,9 +32,9 @@ which means find in the home dir type is filetype iname means it should be case 
 |   -c -> count   |   -delete -> delete found files   |
 |   -e -> multiple patterns   |
 |   -l -> list filenames only   |
-|   ex.     grep -i "apple" fruits.txt   |   **INCORRECT** find . -iname -type f "*python*workout*book*.pdf" ## incorrect bcz options needs arguments   |
-|   grep -e "hello" -e "world" hello.py   |   **CORRECT**	 find . -type f -iname "*python*workout*book*.pdf" ## -type option getting f arg but -iname not   | 
-|	|**CORRECT**   find . -iname "*python*workout*book*.pdf" -type f ## this is orrect too   |							
+|   ex.     grep -i "apple" fruits.txt   |   **INCORRECT** `find . -iname -type f "*python*workout*book*.pdf"` ## incorrect bcz options needs arguments   |
+|   grep -e "hello" -e "world" hello.py   |   **CORRECT**	 `find . -type f -iname "*python*workout*book*.pdf"` ## -type option getting f arg but -iname not   | 
+|	|**CORRECT**   `find . -iname "*python*workout*book*.pdf" -type f` ## this is orrect too   |							
 						        
 ## realisation
 i am not sure but i think\n 
