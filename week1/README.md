@@ -7,7 +7,7 @@ after using `less` - `b -> beginning` | `g -> end` | `/word`
 `~`, `/`, `.`, `..` -  important dir's
 
 
--a -> hidden files
+`-a` -> hidden files
 
 --------------------
 i needed to find a python book but i forgot the name it was something with python and obviously it shouldbe a pdf file
