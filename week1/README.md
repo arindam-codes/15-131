@@ -32,8 +32,8 @@ which means find in the home dir type is filetype iname means it should be case 
 |   -c -> count   |   -delete -> delete found files   |
 |   -e -> multiple patterns   |
 |   -l -> list filenames only   |
-|   ex.     grep -i "apple" fruits.txt   |   **INCORRECT** `find . -iname -type f "*python*workout*book*.pdf"` ## incorrect bcz options needs arguments   |
-|   grep -e "hello" -e "world" hello.py   |   **CORRECT**	 `find . -type f -iname "*python*workout*book*.pdf"` ## -type option getting f arg but -iname not   | 
+|   ex.     `grep -i "apple" fruits.txt`   |   **INCORRECT** `find . -iname -type f "*python*workout*book*.pdf"` ## incorrect bcz options needs arguments   |
+|   `grep -e "hello" -e "world" hello.py`   |   **CORRECT**	 `find . -type f -iname "*python*workout*book*.pdf"` ## -type option getting f arg but -iname not   | 
 |	|**CORRECT**   `find . -iname "*python*workout*book*.pdf" -type f` ## this is orrect too   |							
 						        
 ## realisation
