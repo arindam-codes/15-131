@@ -55,3 +55,18 @@ find (
 
 ```
 but some options are just flags which has true false values like -i -v for grep command so they dont need arguments
+
+------------------------------------------
+
+## Running multiple commands together 
+
+|**Operator**|**Meaning**|
+|`cmd1 && cmd2`|if `cmd1` then `cmd2`|
+|`cmd1 || cmd2`|if **not** `cmd1` then `cmd2`|
+|`cmd1 ; cmd2`|always run `cmd2`|
+|`(cmd1 && cmd2)`|running command in a subshell|
+|`cmd1 | cmd2`|sen the output of `cmd1` into `cmd2`|
+
+### xdg-open nano doesnt need cd bcz they accepts a path
+
+ex. `xdg-open 21-127/infdesc.pdf` instead `cd 21-127 && xdg-open infdesc.pdf`
