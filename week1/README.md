@@ -70,8 +70,7 @@ but some options are just flags which has true false values like -i -v for grep 
 
 ## xdg-open nano doesnt need cd bcz they accepts a path
 
-## ex. 	
+### example 	
 ```markdown
 **`xdg-open 21-127/infdesc.pdf`** instead **`cd 21-127 && xdg-open infdesc.pdf`**
-	
 ```
