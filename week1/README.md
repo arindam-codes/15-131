@@ -61,6 +61,7 @@ but some options are just flags which has true false values like -i -v for grep 
 ## Running multiple commands together 
 
 |**Operator**|**Meaning**|
+|------------|-----------|
 |`cmd1 && cmd2`|if `cmd1` then `cmd2`|
 |`cmd1 || cmd2`|if **not** `cmd1` then `cmd2`|
 |`cmd1 ; cmd2`|always run `cmd2`|
