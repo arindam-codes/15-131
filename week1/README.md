@@ -34,8 +34,18 @@ which means find in the home dir type is filetype iname means it should be case 
 |   -l -> list filenames only   |
 |   ex.     `grep -i "apple" fruits.txt`   |   **INCORRECT** `find . -iname -type f "*python*workout*book*.pdf"` ## incorrect bcz options needs arguments   |
 |   `grep -e "hello" -e "world" hello.py`   |   **CORRECT**	 `find . -type f -iname "*python*workout*book*.pdf"` ## -type option getting f arg but -iname not   | 
-|	|**CORRECT**   `find . -iname "*python*workout*book*.pdf" -type f` ## this is orrect too   |							
-						        
+|	|**CORRECT**   `find . -iname "*python*workout*book*.pdf" -type f` ## this is orrect too   |	
+
+using -o(**OR**) and grouping mechanism ```\(\)```
+```bash
+find ~ -type f \( CONDITION A or CONDITION B \)
+```
+ex. real use.
+```bash
+post6.100L on  main [?] 
+❯ find ~ -type f -iname "*.pdf" \( -iname "*agans*.pdf" -o -iname "*debug*" -o -iname "*debugging*" \) 
+```
+
 ## realisation
 i am not sure but i think\n 
 
