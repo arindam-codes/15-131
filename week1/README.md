@@ -38,7 +38,7 @@ which means find in the home dir type is filetype iname means it should be case 
 
 using -o(**OR**) and grouping mechanism ```\(\)```
 ```bash
-find ~ -type f \( CONDITION A or CONDITION B \)
+find ~ -type f \( CONDITION A -o CONDITION B \)
 ```
 ex. real use.
 ```bash
