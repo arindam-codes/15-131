@@ -155,3 +155,40 @@ rm ~/tools
 
 ```	
 
+------------------------------------------------
+
+## FILESYSTEMS
+
+### Distributed Filesystems: 
+```text
+The Filesystem is distributed accross a network of machines 
+```
+ex. **cloud storage, network filesystem, servers, clusters, distributed systems**
+---
+### Filesystem Quota: 
+```text
+Maximum storage one user is allowed to have
+```
+---
+### Permissions:
+```text
+what each category(owner/group/others) of users allowed to do. 
+```
+ex. in a **file permission string** rw-r-----
+
+```markdown
+		OWNER	GROUP	OTHERS
+		 ↓       ↓       ↓
+		rw-	r--	---
+```
+
+`r -> read | w -> write | x -> execute`
+---
+
+### ACL(Access Control List)
+
+```text
+a customized set of access rules for specific users/groups
+```
+---
+
