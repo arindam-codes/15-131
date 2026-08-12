@@ -79,3 +79,79 @@ instead of
 ```
 cd 21-127 && xdg-open infdesc.pdf
 ```
+
+---------------------------------------------
+
+## Jobs, Man Pages, & Links
+
+## Job Control Flow
+```text   
+             Ctrl+Z
+                  │
+                  ▼
+             ┌─────────┐
+             │ STOPPED │
+             └─────────┘
+              │       │
+            fg│       │bg
+              ▼       ▼
+        ┌──────────┐  ┌──────────────┐
+        │FOREGROUND│  │  BACKGROUND  │
+        └──────────┘  └──────────────┘
+              │              │
+              │ Ctrl+C       │
+              ▼              ▼
+             EXIT           EXIT
+```
+`^C` -> Inturruption signal SIGINT to the program
+`^Z` -> stop signal SIGTSTP the program
+`^D` -> send EOF(Enf Of the File) condition to the REPL Program
+if `^C` is ignored we can run `kill <PID(Process ID)>` or `kill %<job number>`
+and to get PID `ps` or `ps u`
+
+**REPL** Program is Read Eval Print Loop so if theres no more input REPL prgram will be finidhes there 
+
+## Jobs vs Process
+**Process** is core **OS operations** | **Job** is how **shell/zsh controls commands**
+    
+```text
+
+                sleep 100
+               /          \
+              /            \
+       OS's view          zsh's view
+           │                  │
+       PROCESS              JOB
+       PID 19209            %1
+       PROGRAM = sleep      COMMAND = sleep    
+
+```
+
+`man <command>` detailed | `<command> --help` in-short
+
+## Symbolic Links(ln)
+
+Create: ln -s TARGET (<-) LINK (create link symbolic LINK -> TARGET)
+ex.
+ 
+```bash
+ln -s QuantCourse/Sem1/tools ~/tools
+```
+
+find all symbolic links: 
+```bash
+find ~ -type l
+
+```
+Inspecting a symbolic link:
+```bash
+ls -ld ~/tools
+
+```
+destroying:
+ 
+```bash
+rm ~/tools
+
+```	
+
