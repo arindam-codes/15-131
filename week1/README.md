@@ -176,10 +176,15 @@ what each category(owner/group/others) of users allowed to do.
 ```
 ex. in a **file permission string** rw-r-----
 
-```markdown
-		OWNER	GROUP	OTHERS
-		 ↓       ↓       ↓
-		rw-	r--	---
+```text
+				OWNER   GROUP   OTHERS
+                   ↓       ↓       ↓
+-rw-r-----       rw-     r--     ---
+   │              │       │       │
+   │              │       │       └── Others
+   │              │       └────────── Group
+   │              └────────────────── Owner
+   └───────────────────────────────── File type
 ```
 
 `r -> read | w -> write | x -> execute`
