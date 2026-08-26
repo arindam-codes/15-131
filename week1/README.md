@@ -1,4 +1,4 @@
-i learnt week 1 "Using files and Command"
+week 1 "Using files and Command"
 
 `scp` `pwd` `cd` `rm` `ls` `less` `cat` `tree -L x` `(command options args)` `cp` `mv` `rm -r(recursively)` `rmdir(empty dir)` `mkdir` `touch`
 
